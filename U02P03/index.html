@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi sitio web</title>
     <style>
         * {
             box-sizing: border-box;
         }
+
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #aaaaaa;
         }
+
         div.container {
             overflow: auto;
         }
+
         header {
             background-color: #e5e5e5;
             padding: 15px;
             text-align: center;
         }
+
         nav {
             float: left;
             width: 20%;
             text-align: center;
         }
+
         nav ul {
             padding-left: 0px;
         }
+
         nav li {
             list-style: none;
         }
+
         nav li a {
             background-color: #e5e5e5;
             padding: 8px;
@@ -41,11 +49,13 @@
             color: black;
             font-weight: 700;
         }
+
         main {
             float: left;
             width: 60%;
             padding: 0 20px;
         }
+
         .right {
             background-color: #e5e5e5;
             float: left;
@@ -54,14 +64,17 @@
             margin-top: 7px;
             text-align: center;
         }
+
         footer {
             background-color: #e5e5e5;
             text-align: center;
             padding: 10px;
             margin-top: 7px;
         }
+
         /* For mobile phones: */
         @media only screen and (max-width: 620px) {
+
             nav,
             main,
             .right {
@@ -70,38 +83,41 @@
         }
     </style>
 </head>
+
 <body>
-<!-- Encabezado -->
-<header>
-    <h1>Hola mundo!</h1>
-</header>
-<div class="container">
-    <!-- Navegación / cotenedor izquierdo -->
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Multimedia</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <!-- Contenedor principal -->
-    <main>
-        <section>
-            <h2>Lorum Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            diam nonummy nibh euismod tincidunt ut
-            laoreet dolore magna aliquam erat volutpat.</p>
-        </section>
-    </main>
-    <!-- Contenedor secundario / derecho -->
-    <div class="right">
-        <h2>Info</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <!-- Encabezado -->
+    <header>
+        <h1>Laboratorio de Computación II</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <section>
+                <h2>Página principal</h2>
+                <p>Noticias</p>
+                <ul>
+                    <li><a href="https://cnnespanol.cnn.com/2022/04/06/reuniones-virtuales-microsoft-trax/">cnnespanol.cnn.com/2022/04/06/reuniones-virtuales-microsoft-trax</a></li>
+                </ul>
+            </section>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p>En esta página web se lleva a cabo la resolución de la práctica 3 de la unidad 2.</p>
+        </div>
     </div>
-</div>
-<!-- Pie de Página-->
-<footer>
-    <p>© copyright labcomII.com</p>
-</footer>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© copyright labcomII.com</p>
+    </footer>
 </body>
+
 </html>
