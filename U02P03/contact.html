@@ -14,7 +14,6 @@
         <h1>Laboratorio de Computación II</h1>
     </header>
     <div class="container">
-        <!-- Navegación / cotenedor izquierdo -->
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -22,7 +21,6 @@
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
-        <!-- Contenedor principal -->
         <main>
             <section>
                 <h2>Contacto</h2>
@@ -30,31 +28,36 @@
                     <table>
                         <tr>
                             <th><label for="nombre">Nombre:</label></th>
-                            <th><input type="text" name="nombre" id="nombre"></th>
+                            <th><input type="text" name="nombre" id="nombre" required></th>
                         </tr>
                         <tr>
                             <th><label for="correo">Correo:</label></th>
-                            <th><input type="email" name="correo" id="correo"></th>
+                            <th><input type="email" name="correo" id="correo" required></th>
                         </tr>
                         <tr>
                             <th><label for="edad">Edad:</label></th>
-                            <th><input type="number" name="edad" id="edad"></th>
+                            <th><input type="number" name="edad" id="edad" min="0"></th>
                         </tr>
                         <tr>
                             <th><label for="color">Color preferido:</label></th>
                             <th><input type="color" name="color" id="color"></th>
                         </tr>
+                        <tr>
+                            <th><label for="comentario">Comentario:</label></th>
+                            <th><input type="text" name="comentario" id="comentario" min="10"></th>
+                        </tr>
+                        <tr>
+                            <th>><input type="submit" value="Enviar"></th>
+                        </tr>
                     </table>
                 </form>
             </section>
         </main>
-        <!-- Contenedor secundario / derecho -->
         <div class="right">
             <h2>Info</h2>
             <p>En esta sección de la página web puede contactarnos completando un formulario.</p>
         </div>
     </div>
-    <!-- Pie de Página-->
     <footer>
         <p>© copyright labcomII.com</p>
     </footer>
