@@ -53,6 +53,10 @@ nav {
     color: rgb(0, 217, 255);
 }
 
-#login_button {
-    background-color: black;
+.nav-item-login {
+    border: 1px solid white;
+}
+
+.logo svg {
+    width: 30px;
 }
