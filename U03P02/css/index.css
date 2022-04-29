@@ -46,9 +46,13 @@ nav {
 }
 
 .nav-item:hover {
-    background-color: rgb(40, 243, 91);
+    background-color: rgb(75, 70, 70);
 }
 
 .nav-item:hover a {
-    color: blue;
+    color: rgb(0, 217, 255);
+}
+
+#login_button {
+    background-color: black;
 }
