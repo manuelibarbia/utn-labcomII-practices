@@ -10,22 +10,26 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.profile svg {
+    width: 30px;
+    color: black;
 }
 
 header {
-    background-color: grey;
+    background-color: #c9c9c9db;
     display: flex;
-}
-
-nav {
-    width: 95%;
-    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -33,5 +37,11 @@ nav ul li a {
     text-decoration: none;
     color: black;
     padding: 20px;
-    display: block;
+    display: flex;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
 }
