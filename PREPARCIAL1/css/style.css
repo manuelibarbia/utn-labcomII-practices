@@ -13,6 +13,12 @@ body {
     font-weight: 900;
 }
 
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
 .profile svg {
     width: 65px;
     color: black;
@@ -29,16 +35,13 @@ header {
 
 nav ul {
     list-style: none;
-    padding-right: 1200px;
-    width: 100%;
-    margin: auto;
+    display: flex;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
     padding: 20px;
-    display: flex;
     text-transform: uppercase;
 }
 
@@ -62,18 +65,29 @@ nav ul li:hover {
 }
 
 .main-image {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
 }
 
-.main-image {
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.alumnos {
-    height: 300px;
+.img-background {
+    background-image: url("../img/utn-alumnos.jpg");
     width: 600px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.img-content {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    position: absolute;
+    top: 140px;
+    left: 603px;
+    margin: 40px;
 }
