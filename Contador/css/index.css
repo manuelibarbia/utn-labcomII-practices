@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #b3b3b4;
+}
+
+header h1 {
+    text-align: center;
+    padding: 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+div.counter ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 10px;
+    align-items: center;
+}
+
+div.counter ul li {
+    font-size: 100px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+div.counter ul li button {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: bolder;
+}
