@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js" defer></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" id="form">
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" id="name">
+        <label for="age">Edad: </label>
+        <input type="number" name="age" id="age">
+        <label for="birth">Fecha de nacimiento: </label>
+        <input type="date" name="birth" id="birth">
+        <label for="province">Provincia: </label>
+        <select name="province" id="province">
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+        </select>
+        <button type="button" onclick="onSubmitSave()">Guardar</button>
+    </form>
+</body>
+</html>
