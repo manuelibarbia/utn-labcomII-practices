@@ -3,7 +3,7 @@ let persona = {};
 const inputNombre = document.querySelector('input[name="name"]')
 const inputEdad = document.querySelector('input[name="age"]')
 const inputNacimiento = document.querySelector('input[name="birth"]')
-const selectProvincia = document.querySelector('input[name="province"]')
+const selectProvincia = document.querySelector('select[name="province"]')
 
 function onSubmitSave(){
     persona = {
