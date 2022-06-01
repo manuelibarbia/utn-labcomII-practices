@@ -15,3 +15,14 @@ function onSubmitSave(){
 
     console.log(persona)
 }
+
+function printInfo(){
+    document.getElementById("datosNombre").innerHTML = "Nombre: " + persona.Nombre;
+    document.getElementById("datosEdad").innerHTML = "Edad: " + persona.Edad;
+    document.getElementById("datosNacimiento").innerHTML = "Nacimiento: " + persona.Nacimiento;
+    document.getElementById("province").innerHTML = "Provincia: " + persona.Provincia;
+}
+
+document.getElementById("mostrarDatos").onclick = function(){
+    printInfo();
+}
