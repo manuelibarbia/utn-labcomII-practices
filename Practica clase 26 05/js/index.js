@@ -13,31 +13,32 @@ const mostrarProvincia = document.getElementById("datosProvincia")
 
 function onSubmitSave(){
     let formulario_completo = true
+    errores = []
     if (inputNombre.value === "") {
-        alert("Debe rellenar el campo de nombre.")
+        errores.push("Debe rellenar el campo de nombre")
         formulario_completo = false
     }
     if (inputNombre.value.length < 8) {
-        alert("El nombre debe tener al menos 8 caracteres.")
+        errores.push("El nombre debe tener al menos 8 caracteres")
         formulario_completo = false
     }
     if (inputNombre.value.length > 50) {
-        alert("El nombre debe tener como máximo 50 caracteres")
+        errores.push("El nombre debe tener como máximo 50 caracteres")
         formulario_completo = false
     }
 
-    if (inputEdad.value < 18 || inputEdad.value > 100) {
-        alert("La edad debe estar entre 18 y 100 años.")
+    if (Number(inputEdad.value) < 18 || Number(inputEdad.value) > 100) {
+        errores.push("La edad debe estar entre 18 y 100 años")
         formulario_completo = false
     }
 
     if (inputNacimiento.value === "") {
-        alert("Debe completar la fecha de nacimiento.")
+        errores.push("Debe completar la fecha de nacimiento")
         formulario_completo = false
     }
 
     if (selectProvincia.value === "") {
-        alert("Debe seleccionar una provincia.")
+        errores.push("Debe seleccionar una provincia")
         formulario_completo = false
     }
     if (formulario_completo) {
@@ -51,6 +52,14 @@ function onSubmitSave(){
         console.log(persona)
 
         dataBase.push(persona)
+
+        inputNombre.value = ""
+        inputEdad.value = ""
+        inputNacimiento.value = ""
+        selectProvincia.value = ""
+    }
+    else {
+        alert(errores.join("; "))
     }
     
 }
