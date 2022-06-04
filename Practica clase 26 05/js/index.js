@@ -18,12 +18,8 @@ function onSubmitSave(){
         errores.push("Debe rellenar el campo de nombre")
         formulario_completo = false
     }
-    if (inputNombre.value.length < 8) {
-        errores.push("El nombre debe tener al menos 8 caracteres")
-        formulario_completo = false
-    }
-    if (inputNombre.value.length > 50) {
-        errores.push("El nombre debe tener como máximo 50 caracteres")
+    if (inputNombre.value!=="" && inputNombre.value.length<8 || inputNombre.value.length>10) {
+        errores.push("El nombre debe tener entre 8 y 50 caracteres")
         formulario_completo = false
     }
 
