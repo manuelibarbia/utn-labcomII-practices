@@ -50,3 +50,7 @@ ul {
 .ejercicio10{
     color: green;
 }
+
+ul li:hover{
+    color: rgba(0, 0, 0, 0.1)
+}

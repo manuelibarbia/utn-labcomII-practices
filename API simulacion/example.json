@@ -1,0 +1,18 @@
+{
+    "name": "Manuel",
+    "age": 19,
+    "location": {
+        "country": "Argentina",
+        "city": "Rosario"
+    },
+    "courses": [
+        {
+            "id": 1,
+            "name": "JavaScript básico"
+        },
+        {
+            "id": 2,
+            "name": "JavaScript avanzado"
+        }
+    ]
+}
